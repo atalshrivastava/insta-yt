@@ -51,11 +51,11 @@ function Header() {
             <HeartIcon className="navBtn" />
       
             <img src={session?.user?.image} 
-            alt="user" onClick={signOut} 
+            alt="user" onClick={() => signOut()} 
             className="h-10 w-10 rounded-full cursor-pointer" />
             </>
       ) : (
-            <button onClick={signIn}>Sign In</button>
+            <button onClick={() => signIn()}>Sign In</button>
       )}
       
       </div>
